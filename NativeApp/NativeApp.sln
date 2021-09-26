@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativeApp.Droid", "NativeAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativeApp.iOS", "NativeApp.iOS\NativeApp.iOS.csproj", "{99C8485D-AFF1-4C86-8231-34B4732B7A64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeApp.Shared", "NativeApp.Shared\NativeApp.Shared.csproj", "{3D689502-19BF-4571-9206-50C749A45296}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{99C8485D-AFF1-4C86-8231-34B4732B7A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99C8485D-AFF1-4C86-8231-34B4732B7A64}.Release|Any CPU.Build.0 = Release|Any CPU
 		{99C8485D-AFF1-4C86-8231-34B4732B7A64}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3D689502-19BF-4571-9206-50C749A45296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D689502-19BF-4571-9206-50C749A45296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D689502-19BF-4571-9206-50C749A45296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D689502-19BF-4571-9206-50C749A45296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

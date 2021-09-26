@@ -5,4 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NativeApp.Shared\NativeApp.Shared.csproj" />
+  </ItemGroup>
 </Project>

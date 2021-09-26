@@ -1,3 +1,5 @@
+using NativeApp.Shared.LogService;
+
 namespace NativeApp.iOS;
 
 [Register ("AppDelegate")]
@@ -23,6 +25,13 @@ public class AppDelegate : UIApplicationDelegate {
 
 		// make the window visible
 		Window.MakeKeyAndVisible ();
+
+
+
+		ILogService logger = new LogService();
+		logger.Log("test message from Android");
+
+
 
 		return true;
 	}

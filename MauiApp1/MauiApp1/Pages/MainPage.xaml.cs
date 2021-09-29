@@ -20,7 +20,7 @@ namespace MauiApp1.Pages
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            _viewModel.Increment();
+            _viewModel.IncrementCommand.Execute(null);
             CounterLabel.Text = $"Current count: {_viewModel.Count}";
 
             SemanticScreenReader.Announce(CounterLabel.Text);

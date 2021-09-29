@@ -1,5 +1,8 @@
-﻿using Microsoft.Maui;
-using Microsoft.Maui.Controls.Compatibility;
+﻿using MauiApp1.Pages;
+using MauiApp1.ViewModels;
+
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Maui;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
 
@@ -16,6 +19,9 @@ namespace MauiApp1
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
+
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainPageViewModel>();
 
             return builder.Build();
         }

@@ -1,9 +1,21 @@
-﻿namespace MauiApp1.ViewModels
+﻿using Softeq.XToolkit.Common;
+using Softeq.XToolkit.Common.Commands;
+
+using System.Windows.Input;
+
+namespace MauiApp1.ViewModels
 {
-    public class MainPageViewModel
+    public class MainPageViewModel : ObservableObject
     {
+        public MainPageViewModel()
+        {
+            IncrementCommand = new RelayCommand(Increment);
+        }
+
         public int Count { get; private set; }
 
-        public void Increment() => Count += 10;
+        public ICommand IncrementCommand { get; }
+
+        private void Increment() => Count += 10;
     }
 }

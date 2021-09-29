@@ -45,6 +45,10 @@
 		<PackageReference Include="Microsoft.WindowsAppSDK.InteractiveExperiences" Version="1.0.0-experimental1" NoWarn="NU1701" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Softeq.XToolkit.Common" Version="1.1.0-beta7" />
+	</ItemGroup>
+
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>

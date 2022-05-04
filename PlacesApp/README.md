@@ -1,4 +1,6 @@
 
+MAUI port from Xamarin.Forms: https://www.xamboy.com/2019/05/29/google-maps-place-search-in-xamarin-forms/
+
 
 ## History
 

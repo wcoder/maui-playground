@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:PlacesApp.ViewModels"
+    xmlns:m="clr-namespace:PlacesApp.Models"
+    x:Class="PlacesApp.MainPage"
+    x:DataType="vm:MainPageViewModel">
+
+    <Grid
+        VerticalOptions="FillAndExpand"
+        RowSpacing="0"
+        ColumnSpacing="0"
+        RowDefinitions="Auto,*">
+
+        <!-- Search Entry -->
+        <Entry
+            Grid.Row="0"
+            Placeholder="Enter Address"
+            Text="{Binding Query, Mode=TwoWay}"
+            HeightRequest="44"
+            FontSize="18"
+            ReturnType="Search"
+            HorizontalOptions="FillAndExpand" />
+
+        <!-- Search Results -->
+        <ListView
+            Grid.Row="1"
+            ItemsSource="{Binding Places}"
+            Footer=""
+            SeparatorColor="Gray">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="m:GooglePlaceAutoCompletePrediction">
+                    <TextCell
+                        Text="{Binding StructuredFormatting.MainText}"
+                        Detail="{Binding StructuredFormatting.SecondaryText}"
+                        TextColor="Red"
+                        DetailColor="Blue" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

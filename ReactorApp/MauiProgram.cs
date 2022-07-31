@@ -1,7 +1,6 @@
 ﻿using MauiReactor;
 using ReactorApp.Pages;
 
-
 namespace ReactorApp;
 
 public static class MauiProgram
@@ -17,6 +16,9 @@ public static class MauiProgram
 
                 app.SetWindowsSpecificAssectDirectory("Assets");
             })
+#if DEBUG
+            .EnableMauiReactorHotReload()
+#endif
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

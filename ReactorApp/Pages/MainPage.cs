@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MauiReactor;
+﻿using MauiReactor;
 
 namespace ReactorApp.Pages;
 
@@ -36,8 +31,8 @@ class MainPage : Component<MainPageState>
                         .HCenter(),
 
                     new Button(State.Counter == 0 ? "Click me" : $"Clicked {State.Counter} times!")
-                        .OnClicked(()=>SetState(s => s.Counter ++))
-                        .HCenter()                    
+                        .OnClicked(() => SetState(s => s.Counter++))
+                        .HCenter()
                 }
                 .VCenter()
                 .Spacing(25)

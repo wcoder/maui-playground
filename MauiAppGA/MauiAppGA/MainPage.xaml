@@ -16,6 +16,30 @@
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center">
+                <Image.Behaviors>
+                    <local:ImageTintColorBehavior TintColor="Fuchsia" />
+                </Image.Behaviors>
+            </Image>
+            
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                local:TintColorMapper.TintColor="Blue" />
+
+            <local:ImageTintColor
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                TintColor="Orange" />
                 
             <Label 
                 Text="Hello, World!"
